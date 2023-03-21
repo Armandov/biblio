@@ -43,7 +43,7 @@ function myFunction() {
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
+  table = document.getElementById("table");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[0];
@@ -61,11 +61,11 @@ function myFunction() {
 </head>
 <body>
   <nav>
-    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href="#"><i class="fa fa-fw fa-search"></i> Buscar</a>
-    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contacto </a>
-    <a href="">  <i class="fa fa-fw fa-shopping-cart"> </i> Comprar </a>
-    <a href="/"><i class="fa fa-fw fa-user"></i> Inciar</a>
+    <a class="active" href="/"><i class="fa fa-fw fa-home"></i></a>
+  
+    <a href="/data.html"><i class="fa fa-fw fa-book"></i> </a>
+    <a target="_blank" href="https://www.discogs.com/user/Ferraboxco">  <i class="fa fa-fw fa-compact-disc"> </i>  </a>
+    <a href="/"><i class="fa fa-fw fa-user"></i> </a>
   </nav>
   <section class="dataTable">
 
@@ -79,7 +79,7 @@ function myFunction() {
 			<input type="text" name="filter" id="txtFind" value="" placeholder="Buscar" >
 		</section>
 
-		<table id="table" id="myTable">
+		<table id="table">
 			<thead>
 
   <thead>
@@ -87,8 +87,8 @@ function myFunction() {
     <th>ID</th>
     <th>Autor</th>
     <th>Titulo</th>
-    <th>Genero</th>
-    <th>Editorial</th>
+    <th onclick='javascript:void(0)'>Genero</th>
+    <th onclick='return false;'>Editorial</th>
     </tr>
         </thead>
 <tbody class="bodyTable">

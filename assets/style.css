@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 body , html{
 	margin  : 0;
@@ -68,6 +68,9 @@ body , html{
 	display: none;
 }
 
+
+
+
 header {
     /*background: linear-gradient(rgba(255,255,255,.5), rgba(43, 2, 2, 0.5)), url(../Images/ICANN.JPG ); */
     background-image:  url(./head.JPG ); 
@@ -83,6 +86,17 @@ header {
     
   }
 
+  .headers {
+    background-image:  url(./heder.JPG ); 
+     background-size:  cover;
+	
+	background-size: 50% ;
+	border-radius: 1%;
+	height: auto;
+    filter:grayscale(); 
+	
+
+  }
 
   
   /* Style  navigation bar */

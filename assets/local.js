@@ -10,8 +10,8 @@ function save(){
   // set the item
   sessionStorage.setItem(key, value);
   display();
-  key.value == "book";
-  value.value == "books";
+  key.value = "book";
+  value.value = "books";
 }
 function display(){
   var display = document.getElementById("display");
